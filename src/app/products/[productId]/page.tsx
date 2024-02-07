@@ -12,7 +12,6 @@ export const generateMetadata = ({params}:Props):Metadata=>{
   }
 }
 
-
 const ProductDetail = ({params}:Props) => {
   return (
     <div>
