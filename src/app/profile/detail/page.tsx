@@ -1,5 +1,8 @@
-import React from 'react'
-
+export const metadata={
+  title:{
+    absolute: "Overwrite metatitle"
+  }
+}
 const Detail = () => {
   return (
     <div>
