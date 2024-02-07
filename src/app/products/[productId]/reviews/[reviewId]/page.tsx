@@ -1,4 +1,4 @@
-
+import { notFound } from "next/navigation"
 const reviewId = ({
     params,}
     :{
@@ -6,11 +6,16 @@ const reviewId = ({
         productId:string,
         reviewId:string
     }}) => {
-  return (
-    <div>
-      This is review id {params.reviewId} for product id {params.productId}
-    </div>
-  )
+
+    if(parseInt(params.reviewId)>1000){
+        notFound()
+    }
+
+    return (
+        <div>
+        This is review id {params.reviewId} for product id {params.productId}
+        </div>
+    )
 }
 
 export default reviewId
