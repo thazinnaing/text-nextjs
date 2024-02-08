@@ -1,5 +1,6 @@
 import Link from "next/link"
 const Products = () => {
+ 
     return (
      <div>
       <Link href="/products/1">Product 1</Link>
