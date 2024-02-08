@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next"
 
 type Props={
@@ -6,13 +7,18 @@ type Props={
   }
 }
 
-export const generateMetadata = ({params}:Props):Metadata=>{
-  return{
-    title: `Product ${params.productId}`
-  }
-}
-
 const ProductDetail = ({params}:Props) => {
+
+  const generateInt=(count: number)=>{
+    return Math.floor(Math.random()*count)
+
+  }
+  const random = generateInt(2)
+
+  if(random === 1){
+    throw new Error("Error loading review")
+  }
+
   return (
     <div>
         This is a product detail page {params.productId}
