@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState } from "react";
+
 
 const navLinks=[
     {name: "Register",href:"/register"},
@@ -15,9 +17,11 @@ const AuthLayout = ({
 }) => {
 
     const pathname=usePathname();
+    const [input, setInput]=useState("")
 
   return (
     <div>
+        <input onChange={e=>setInput(e.target.value)} type="text" value={input} placeholder="Enter an input text" className="text-black"/>
         {navLinks.map(link=>{
             const isActive=pathname.startsWith(link.href)
             return(
