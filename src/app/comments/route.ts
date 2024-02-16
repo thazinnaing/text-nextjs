@@ -6,7 +6,7 @@ export const GET=async()=>{
 
 export const POST = async(request: Request)=>{
     const comment = await request.json()
-    console.log("comment",comment)
+    
     const newComment = {
         id: comments.length+1,
         description: comment.description
@@ -18,8 +18,4 @@ export const POST = async(request: Request)=>{
         },
         status: 201
     })
-}
-
-export const PATCH = async()=>{
-    
 }
