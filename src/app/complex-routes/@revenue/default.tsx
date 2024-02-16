@@ -3,7 +3,8 @@ import Card from "@/components/card"
 const DefaultRevenue = () => {
   return (
     <Card className="font-bold text-xl">
-      This is Revenue
+      This is Revenue page
+    
     </Card>
   )
 }

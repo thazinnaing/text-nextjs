@@ -7,7 +7,7 @@ const DefaultNotifications = () => {
         <div>
             This is Notifications
         </div>
-        <Link href="/complex-routes/archieved">archieved</Link>
+        <Link className="text-red-500" href="/complex-routes/archieved">archieved</Link>
     </Card>
   )
 }

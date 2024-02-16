@@ -7,7 +7,7 @@ const Notifications = () => {
         <div>
             This is Notifications
         </div>
-        <Link href="/complex-routes/archieved">archieved</Link>
+        <Link href="/complex-routes/archieved">archieved page</Link>
     </Card>
   )
 }
